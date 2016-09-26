@@ -21,8 +21,6 @@ public class ImageUtils {
 		BufferedImage image = null;
 		byte[] imageByte;
 		try {
-			//            BASE64Decoder decoder = new BASE64Decoder();
-			//            imageByte = decoder.decodeBuffer(imageString);
 			imageByte = Base64.getDecoder().decode(imageString);
 			ByteArrayInputStream bis = new ByteArrayInputStream(imageByte);
 			image = ImageIO.read(bis);
